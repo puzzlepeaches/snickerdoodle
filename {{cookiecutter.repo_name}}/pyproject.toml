@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "{{cookiecutter.app_name}}"
+version = "{{cookiecutter.version}}"
+description = ""
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
+readme = "README.md"
+homepage = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}"
+repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}"
+exclude = ["tests"]
+include = ["LICENSE", "CHANGELOG.md"]
+license = "BSD 3-Clause License"
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+packages = [
+    { include = "{{cookiecutter.app_name}}"}
+]
+
+[tool.poetry.scripts]
+{{cookiecutter.app_name}} = '{{cookiecutter.app_name}}.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^{{cookiecutter.python_version}}"
+click = "*"
+rich = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+isort = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
