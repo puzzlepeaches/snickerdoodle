@@ -1,6 +1,6 @@
 {
     "repo_name": "",
-    "_app_name": "{{cookiecutter.repo_name|replace(' ', '')|lower}}",
+    "app_name": "{{cookiecutter.repo_name|replace(' ', '')|lower}}",
     "_author": "Nicholas Anastasi",
     "_email": "nanastasi@sprocketsecurity.com",
     "github_user": "puzzlepeaches",
