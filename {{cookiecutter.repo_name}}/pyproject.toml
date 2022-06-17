@@ -34,6 +34,26 @@ black = "*"
 pre-commit = "*"
 isort = "*"
 
+[tool.black]
+line-length = 99 # override black's default line-length
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+# make it compatible with black
+profile = "black"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
