@@ -18,7 +18,7 @@
 <br>
 
 ## Installation
-{{cookiecutter.repo_name}} supports all major operating systems and can be installed for the PyPi using the following command:
+{{cookiecutter.repo_name}} can be installed for the PyPi using the following command:
 
 ```
 pipx install {{cookiecutter.repo_name}} 
