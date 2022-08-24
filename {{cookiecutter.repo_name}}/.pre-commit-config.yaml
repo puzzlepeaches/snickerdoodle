@@ -14,20 +14,16 @@ repos:
     rev: v2.6.2
     hooks:
       - id: prettier
-  - repo: https://github.com/terrencepreilly/darglint
-    rev: v1.8.1
-    hooks:
-    - id: darglint
   - repo: https://github.com/asottile/pyupgrade
     rev: v2.34.0
     hooks:
-    - id: pyupgrade
+      - id: pyupgrade
   - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
     rev: v1.2.4
     hooks:
-    - id: python-safety-dependencies-check
-      files: pyproject.toml
-      args: [--short-report]
+      - id: python-safety-dependencies-check
+        files: pyproject.toml
+        args: [--short-report]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.3.0
     hooks:
