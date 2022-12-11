@@ -8,7 +8,7 @@ homepage = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_
 repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}"
 exclude = ["tests"]
 include = ["LICENSE", "CHANGELOG.md"]
-license = "BSD 3-Clause License"
+license = "Unlicense"
 classifiers = [
     "Environment :: Console",
     "Programming Language :: Python :: 3",
@@ -50,8 +50,9 @@ exclude = '''
 '''
 
 [tool.isort]
-# make it compatible with black
 profile = "black"
+force_single_line = true
+lines_after_imports = 2
 
 
 [build-system]

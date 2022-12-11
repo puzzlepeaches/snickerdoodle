@@ -35,8 +35,7 @@ For development, clone the repository and install it locally using poetry.
 ```
 git clone https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.git
 cd {{cookiecutter.repo_name}}
-poetry shell 
-poetry install
+poetry install && poetry shell
 ```
 
 <br>
