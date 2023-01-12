@@ -23,6 +23,7 @@ packages = [{ include = "{{cookiecutter.app_name}}" }]
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.python_version}}"
 click = "*"
+click-extra="*"
 rich = "*"
 
 [tool.poetry.dev-dependencies]

@@ -16,3 +16,4 @@ log = logging.getLogger("rich")
 
 # Initializing console for rich
 console = Console()
+print = console.print
