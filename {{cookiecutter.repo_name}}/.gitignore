@@ -1,8 +1,8 @@
 TODO.md
-.vscode
 .DS_Store
 *.swp
 Makefile
+*.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
