@@ -1,12 +1,15 @@
-# PythonCookie
+# snickerdoodle 
 
-This is my Python [Cookiecutter](https://github.com/puzzlepeaches/snickerdoodle) project template.
+Python [cookiecutter](https://github.com/puzzlepeaches/snickerdoodle) template for command line tools.
 
-Features:
-- Uses [Poetry](https://python-poetry.org/) for dependency management & packaging
-- Primarily created for use during the creation of command line utilities
-- devcontainer support for VSCode
-- [pre-commit](https://pre-commit.com/) for linting & formatting
-- black for formatting
-- click for CLI
-- rich for CLI output and logging
+![Snickerdoodle Logo](./img/cookie.png)
+
+## Features
+
+Read the blog post [COMING SOON](https://sprocketsecurity.com).
+
+- Command line interface built with [Click](https://click.palletsprojects.com/).
+- Configurable logging with options for JSON and rich text formats.
+- Extensive validation helpers for URLs, emails, and more.
+- Easy installation via pipx or directly from the repository.
+- Pre-configured with development tools like Poetry, pre-commit hooks, and continuous integration setups.

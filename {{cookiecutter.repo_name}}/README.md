@@ -1,8 +1,8 @@
 <div align="center">
 
-# {{cookiecutter.repo_name}} 
+# {{cookiecutter.app_name}} 
 
-{{cookiecutter.repo_name}} is a
+{{cookiecutter.app_name}} is a
 
 <br>
 
@@ -18,10 +18,10 @@
 <br>
 
 ## Installation
-{{cookiecutter.repo_name}} can be installed for the PyPi using the following command:
+{{cookiecutter.app_name}} can be installed for the PyPi using the following command:
 
 ```
-pipx install {{cookiecutter.repo_name}} 
+pipx install {{cookiecutter.app_name}} 
 ```
 
 If this tool is not yet availible via PyPi, you can install it directly from the repository using: 

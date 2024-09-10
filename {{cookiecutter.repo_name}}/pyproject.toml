@@ -19,12 +19,16 @@ packages = [{ include = "{{cookiecutter.app_name}}" }]
 
 [tool.poetry.scripts]
 {{cookiecutter.app_name}} = '{{cookiecutter.app_name}}.__main__:main'
+{% if cookiecutter.app_short_name != "" %}
+{{cookiecutter.app_short_name}} = '{{cookiecutter.app_name}}.__main__:main'
+{% endif %}
 
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.python_version}}"
 click = "*"
 click-extra="*"
 rich = "*"
+validators = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"

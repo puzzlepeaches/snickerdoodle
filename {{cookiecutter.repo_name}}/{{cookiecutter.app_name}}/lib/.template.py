@@ -1,1 +1,1 @@
-from ..utils.setup import log, print
+from ..utils.display import log, print

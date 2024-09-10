@@ -19,6 +19,7 @@ def requests_retry_session(
     backoff_factor=0.3,
     status_forcelist=(500, 502, 504, 503, 403),
     session=None,
+    proxy=None,
 ):
     session = session or requests.Session()
     retry = Retry(
@@ -31,4 +32,8 @@ def requests_retry_session(
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("http://", adapter)
     session.mount("https://", adapter)
+    
+    if proxy:
+        session.proxies = {"http": proxy, "https": proxy}
+    
     return session

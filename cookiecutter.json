@@ -1,10 +1,12 @@
 {
   "repo_name": "",
   "app_name": "{{cookiecutter.repo_name|replace(' ', '')|lower}}",
-  "author": "Nicholas Anastasi",
-  "email": "nanastasi@sprocketsecurity.com",
-  "github_user": "puzzlepeaches",
+  "app_short_name": "",
+  "author": "",
+  "email": "",
+  "github_user": "",
   "version": "0.0.1",
   "copyright_year": "{% now 'utc', '%Y' %}",
-  "python_version": "3.10"
+  "python_version": "3.12",
+  "logging_format": ["Standard", "JSON"]
 }
